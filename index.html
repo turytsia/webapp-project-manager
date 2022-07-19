@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/app.css" />
+    <script>var exports = {};</script>
+    <script defer src="./dist/bundle.js"></script>
+    <title>TypeScript Practice</title>
+  </head>
+  <body>
+    <template id="template-form">
+      <form>
+        <div>
+          <label for="title">Title</label>
+          <input name="title" type="text" id="title" />
+        </div>
+        <div>
+          <label for="description">Description</label>
+          <textarea
+            name="description"
+            type="text"
+            rows="3"
+            id="description"
+          ></textarea>
+        </div>
+        <div>
+          <label for="people">People</label>
+          <input
+            name="people"
+            type="number"
+            id="people"
+            step="1"
+            min="0"
+            max="10"
+          />
+        </div>
+        <button type="submit">Create Project</button>
+      </form>
+    </template>
+    <template id="template-project">
+      <section>
+        <h2>Single Project</h2>
+      </section>
+    </template>
+    <template id="header">
+      <section>
+        <header>
+          <button>Index</button>
+          <button>Create New Project</button>
+        </header>
+      </section>
+    </template>
+    <template id="template-list">
+      <section class="list">
+        <h2>Projects</h2>
+        <ul id="list"></ul>
+      </section>
+    </template>
+    <template id="template-list-item">
+      <li draggable="true">
+        <h2></h2>
+        <span></span>
+      </li>
+    </template>
+    <div id="app"></div>
+  </body>
+</html>

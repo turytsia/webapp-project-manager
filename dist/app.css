@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --red: #ff4f69;
+    --blue: #2dbbf3;
+}
+
+body {
+    overflow-y: scroll;
+}
+
+button {
+    cursor: pointer;
+}
+
+section,
+form {
+    border: 1px solid var(--red);
+}
+
+#app {
+    position: relative;
+    padding: 10px;
+    max-width: 600px;
+    margin: 0 auto;
+    font-family: rubik;
+}
+
+header {
+    text-align: right;
+}
+
+form {
+    background-color: #dddddd;
+    margin-bottom: 20px;
+    padding: 10px;
+    border-radius: 2px;
+}
+
+form>div>label {
+    margin-bottom: 5px;
+}
+
+form>div {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+
+form>div>input,
+form>div>textarea {
+    width: 100%;
+    padding: 5px;
+    font-size: 16px;
+    background-color: #fff;
+    border: 1px solid var(--red);
+    resize: none;
+    border-radius: 2px;
+    font-family: rubik;
+}
+
+form>button {
+    background-color: var(--red);
+    margin-top: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+}
+
+.list--active {
+    border: 1px solid var(--red);
+}
+
+.list--active>h2 {
+    background-color: var(--red);
+}
+
+.list--finished {
+    border: 1px solid var(--blue);
+}
+
+.list--finished>h2 {
+    background-color: var(--blue);
+}
+
+.list{
+    margin-bottom: 10px;
+    border-radius: 2px;
+}
+
+.list>ul {
+    list-style: none;
+    padding: 10px 10px;
+
+}
+
+.list>h2 {
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.list>ul>li {
+    background-color: #fff;
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+}
+.list>ul>li:not(:first-child){
+    margin-top: 10px;
+}
+
+.droppable{
+    background-color: #dbdbdb;
+}
